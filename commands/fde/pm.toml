@@ -1,0 +1,9 @@
+description = "Generate 4-6 week GenAI PoC Work Breakdown Structures (WBS), schedules, and milestones"
+
+prompt = """
+Activate the on-demand `fde-project-manager` skill from the workspace skill library.
+
+1. Read `.agents/skill-library/fde-project-manager/SKILL.md` using `view_file`.
+2. If needed, inspect any referenced files under `.agents/skill-library/fde-project-manager/` (`resources/`, `examples/`, or `scripts/`).
+3. Execute the `fde-project-manager` workflow instructions for the user's request.
+"""

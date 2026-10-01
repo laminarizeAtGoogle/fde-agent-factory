@@ -1,0 +1,11 @@
+{
+  "name": "fde-agent-factory",
+  "displayName": "Cloud AI FDE Agent Software Factory",
+  "version": "1.0.0",
+  "description": "Reusable Agentic Software Factory plugin and workspace bootstrapper bundling 25 pre-loaded ADK/FDE/OpenSpec skills, 13 on-demand FDE deliverable and audit workflows, pre-push credential and OSPO compliance gates, and Google OKF + Mermaid architecture governance.",
+  "suggestedPrompts": [
+    "Propose a new OpenSpec change for an ADK multi-agent workflow using /opsx-propose",
+    "Build and deploy a production Google Cloud ADK agent with Gemini GenAI SDK",
+    "Run pre-push credential sanitization and synchronize the Mermaid architecture diagram and OKF Knowledge Base"
+  ]
+}

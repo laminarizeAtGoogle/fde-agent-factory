@@ -1,0 +1,11 @@
+# Python & Test Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# OS & Editor Artifacts
+.DS_Store
+.directory
+*.log
+*.tmp

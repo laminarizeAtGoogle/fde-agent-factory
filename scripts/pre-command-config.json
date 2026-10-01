@@ -1,0 +1,39 @@
+{
+  "targetCommandPattern": "(?:^|[;&|]\\s*)\\s*git(?:\\s+-[^\\s]+|\\s+--[^\\s]+|\\s+-[a-zA-Z]\\s+[^\\s]+)*\\s+push\\b",
+  "slashCommand": "git-push-sanitization-check",
+  "denyOnFailure": true,
+  "timeoutSeconds": 60,
+  "description": "Runs /git-push-sanitization-check subagent and credential/sensitive content checks prior to executing 'git push'.",
+  "checkCredentials": true,
+  "credentialTypes": [
+    "cookies",
+    "jwt",
+    "api_keys",
+    "oauth_tokens",
+    "service_accounts",
+    "internal_google"
+  ],
+  "excludeFiles": [
+    "uv.lock",
+    "package-lock.json",
+    "pnpm-lock.yaml",
+    "yarn.lock",
+    "poetry.lock",
+    "Cargo.lock",
+    "Gemfile.lock",
+    "composer.lock",
+    ".terraform.lock.hcl",
+    "test_pre_command_hook.py",
+    "pre_command_hook.py",
+    "sanitize_repo.sh",
+    "compliance-guide.md",
+    ".agents/skills/fde-cross-compliance/SKILL.md",
+    ".agents/skills/fde-git-push/SKILL.md",
+    ".agents/skill-library/fde-git-push/SKILL.md",
+    ".agents/skills/git-push-sanitization-check/SKILL.md",
+    "skills/fde-cross-compliance/SKILL.md",
+    "skills/fde-git-push/SKILL.md",
+    "skill-library/fde-git-push/SKILL.md",
+    "skills/git-push-sanitization-check/SKILL.md"
+  ]
+}

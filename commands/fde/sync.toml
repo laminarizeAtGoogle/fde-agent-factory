@@ -1,0 +1,9 @@
+description = "Intelligently synchronize workspace skills, scripts, and rules with global user configuration"
+
+prompt = """
+Activate the on-demand `fde-intelligent-sync` skill from the workspace skill library.
+
+1. Read `.agents/skill-library/fde-intelligent-sync/SKILL.md` using `view_file`.
+2. If needed, inspect any referenced files under `.agents/skill-library/fde-intelligent-sync/` (`resources/`, `examples/`, or `scripts/`).
+3. Execute the `fde-intelligent-sync` workflow instructions for the user's request.
+"""

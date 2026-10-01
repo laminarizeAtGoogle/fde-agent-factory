@@ -1,0 +1,30 @@
+{
+  "git-push-sanitization-gate": {
+    "PreToolUse": [
+      {
+        "matcher": "run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/pre-command-hook.sh",
+            "timeout": 65
+          }
+        ]
+      }
+    ]
+  },
+  "git-push-architecture-docs-gate": {
+    "PreToolUse": [
+      {
+        "matcher": "run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/check-architecture-docs.sh",
+            "timeout": 65
+          }
+        ]
+      }
+    ]
+  }
+}

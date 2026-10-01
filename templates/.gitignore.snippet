@@ -1,0 +1,48 @@
+# ==============================================================================
+# FDE Agent Software Factory — Recommended .gitignore Rules
+# ==============================================================================
+
+# Binaries & Standalone Toolchains
+/bin/
+/google-cloud-sdk/
+/.python/
+/.venv/
+/.nodejs/
+node_modules/
+*.tar.gz
+
+# Gemini CLI Runtime Config (Keep .gemini/commands tracked if desired, ignore local auth/config)
+/.gemini/config/
+
+# Environment Variables & GCP Credentials
+/.env
+*.env
+/.npmrc
+/.gcloud/
+*application_default_credentials.json
+
+# Terraform Secrets, State & Cache
+**/.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+!*.tfvars.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Python & Agent Runtime State
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.factory_state/
+
+# General / OS
+*.log
+.DS_Store
+.directory

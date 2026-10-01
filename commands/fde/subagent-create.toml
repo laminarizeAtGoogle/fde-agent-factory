@@ -1,0 +1,9 @@
+description = "Scaffold custom subagent definition files with validated YAML frontmatter"
+
+prompt = """
+Activate the on-demand `fde-subagent-creator` skill from the workspace skill library.
+
+1. Read `.agents/skill-library/fde-subagent-creator/SKILL.md` using `view_file`.
+2. If needed, inspect any referenced files under `.agents/skill-library/fde-subagent-creator/` (`resources/`, `examples/`, or `scripts/`).
+3. Execute the `fde-subagent-creator` workflow instructions for the user's request.
+"""

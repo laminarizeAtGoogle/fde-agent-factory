@@ -1,0 +1,12 @@
+{
+  "targetCommandPattern": "(?:^|[;&|]\\s*)\\s*git(?:\\s+-[^\\s]+|\\s+--[^\\s]+|\\s+-[a-zA-Z]\\s+[^\\s]+)*\\s+push\\b",
+  "docsDir": "docs",
+  "diagramFiles": [
+    "architecture.md",
+    "architecture_diagram.mmd"
+  ],
+  "denyOnFailure": true,
+  "timeoutSeconds": 60,
+  "description": "Executes the /update-architecture-docs subagent slash command on git push to update the Mermaid diagram and Google OKF Knowledge Base.",
+  "slashCommand": "update-architecture-docs"
+}

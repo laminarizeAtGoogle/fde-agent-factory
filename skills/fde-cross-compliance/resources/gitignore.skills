@@ -1,0 +1,21 @@
+# ============================================================================
+# Googler-Exclusive AI Skills & Agent Configurations (DO NOT EXPORT TO CLIENT)
+# ============================================================================
+.gemini/
+.agents/
+_agents/
+skills/
+fde-skills-repo/
+clean-code-skill/
+GEMINI.md
+AGENTS.md
+CLAUDE.md
+CONTEXT.md
+.cursor/
+.cursorrules
+.claude/
+.aider*
+.codex/
+.opencode/
+.hermes/
+skill-runs.jsonl
